@@ -227,6 +227,7 @@ def perform_training(args):
     logging.info("End training")
 
     args.metadata = open(args.model_dir + '/metadata.yaml', 'w+')
+    lm_stats = None
     write_metadata(args, classifier, y_true, y_pred, lm_stats)
     args.metadata.close()
 
