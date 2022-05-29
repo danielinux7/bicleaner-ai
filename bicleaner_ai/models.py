@@ -472,7 +472,7 @@ class BCXLMRoberta(BaseModel):
             "vocab_file": "vocab",
             "model": 'jplu/tf-xlm-roberta-base',
             "batch_size": 16,
-            "maxlen": 500,
+            "maxlen": 200,
             "n_classes": 2,
             "epochs": 10,
             "steps_per_epoch": 40000,
